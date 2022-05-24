@@ -8,9 +8,9 @@
 * [Installation](#installation)
 # Description
 
-```
+
 This project was created with note taking in mind. Being able to create, save, and delete unneeded notes through exress allows the user to do just that. The end goal is to allow the user to have control on their thoughts and tasks till they are completed.
-```
+
 
 # Deployed Links
 
@@ -36,4 +36,5 @@ Heroku Launch: https://rocky-lake-51969.herokuapp.com/
 .gitignore
 package.json
 package-lock.json
+Heroku
 ```

@@ -10,9 +10,9 @@ module.exports = function(app){
 
     app.post("/api/notes", function (req,res){
         let NewNote =req.body;
-        let uniqueID = (data.length).toString();
-        console.log(uniqueID);
-        NewNote.id = uniqueID;
+        let NewID = (data.length).toString();
+        console.log(NewID);
+        NewNote.id = NewID;
         data.push(NewNote);
 
         fs.writeFileSync("./db/db.json", JSON.stringfy(data), function(err){
@@ -27,5 +27,19 @@ module.exports = function(app){
 
     //the user needs to be able to delete their note as well
 
-    app.delete("/api/notes/:id", function*req,res
+    app.delete("/api/notes/:id", function(req,res){
+        let NoteID=req.params.id;
+        let UniqueID=0;
+        console.log(`Currently delete note with the id as follows: ${NoteID}`);
+        data=data.filter(CurrentNote =>{
+            return CurrentNote.id != NoteID;
+        });
+        for (CurrentNote of data){
+            CurrentNote.id = UniqueID.toString();
+            UniqueID ++;
+        }
+        fs.writeFileSync("./db/db.json", JSON.stringify());
+        newID ++;
+    });
 }
+        

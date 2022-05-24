@@ -4,7 +4,8 @@
 * [Project-Description](#description)
 * [Deployed-Links](#deployed-links)
 * [Usage](#usage)
-* [Technologies-Used]
+* [Technologies-Used](#technologies-used)
+* [Installation](#installation)
 # Description
 
 ```
@@ -24,4 +25,11 @@ This project was created with note taking in mind. Being able to create, save, a
 -Node.js
 -Express.js
 -Heroku
+```
+
+# Installation
+```
+.gitignore
+package.json
+package-lock.json
 ```

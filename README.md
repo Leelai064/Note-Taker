@@ -14,6 +14,10 @@ This project was created with note taking in mind. Being able to create, save, a
 
 # Deployed Links
 
+Github Repository: https://github.com/Leelai064/Note-Taker
+
+Heroku Launch: https://rocky-lake-51969.herokuapp.com/ 
+
 # Usage
 
 # Technologies Used

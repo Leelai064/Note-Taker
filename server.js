@@ -11,7 +11,7 @@ var app = express ();
 //Data Parsing
 
 app.use(express.urlencoded({extended:true}));
-app.use(expression.json());
+app.use(express.json());
 app.use("/db",express.static*("./db"));
 
 require(".routing/html-routing")(app);

@@ -18,7 +18,6 @@ Github Repository: https://github.com/Leelai064/Note-Taker
 
 Heroku Launch: https://rocky-lake-51969.herokuapp.com/ 
 
-Github Launch: https://leelai064.github.io/Note-Taker/ 
 
 # Usage
 

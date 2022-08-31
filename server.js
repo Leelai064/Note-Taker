@@ -1,24 +1,24 @@
-// listing dependencies needed
+// added express from npm
+const express = require('express');
+const fs = require('fs');
+const app = express();
 
-const express = require("express");
-const fs= require("fs");
+// port for server and for 3001 localhost server
+const PORT = process.env.PORT || 3001;
 
-// Variables for our express application
+const apiRoute = require('./routes/api');
+const htmlRoute = require('./routes/html');
 
-var PORT = process.env.PORT || 8080
-var app = express ();
+app.use(express.urlencoded({ extended: true}));
 
-//Data Parsing
-
-app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use("/db",express.static*("./db"));
 
-require(".routing/html-routing")(app);
-require(".routing/api-routing")(app);
+app.use(express.static('public'));
 
-//server needs to listen to our input
+app.use('/api', apiRoute);
 
-app.list(PORT, function(){
-    console.log("APP is listening" + PORT);
+app.use('/', htmlRoute);
+
+app.listen(PORT, () => {
+    console.log(`${PORT} is the current server`)
 });

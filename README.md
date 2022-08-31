@@ -22,6 +22,8 @@ Github Launch: https://leelai064.github.io/Note-Taker/
 
 # Usage
 
+![Walkthrough](/video/NoteTaker.gif)
+
 # Technologies Used
 
 ```
@@ -35,8 +37,5 @@ Github Launch: https://leelai064.github.io/Note-Taker/
 
 # Installation
 ```
-.gitignore
-package.json
-package-lock.json
-Heroku
+1. Explicitly install (npm i) express and uuid
 ```
